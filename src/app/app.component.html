@@ -1,0 +1,83 @@
+<div class="full-height">
+	<mat-sidenav-container>
+		<mat-sidenav mode="side" opened>
+			<div class="main-menu">
+				<a
+					routerLink="/home"
+					routerLinkActive="active"
+					matTooltip="{{ 'Tabs.Home' | translate }}"
+					matTooltipPosition="right"
+				>
+					<mat-icon class="material-icons-outlined">home</mat-icon>
+				</a>
+				<a
+					routerLink="/about-me"
+					href="#"
+					routerLinkActive="active"
+					matTooltip="{{ 'Tabs.AboutMe' | translate }}"
+					matTooltipPosition="right"
+				>
+					<mat-icon class="material-icons-outlined">face</mat-icon>
+				</a>
+				<a
+					routerLink="/skills"
+					href="#"
+					routerLinkActive="active"
+					matTooltip="{{ 'Tabs.Skills' | translate }}"
+					matTooltipPosition="right"
+				>
+					<mat-icon class="material-icons-outlined"
+						>assessment</mat-icon
+					>
+				</a>
+				<a
+					routerLink="/experience"
+					href="#"
+					routerLinkActive="active"
+					matTooltip="{{ 'Tabs.Experience' | translate }}"
+					matTooltipPosition="right"
+				>
+					<mat-icon class="material-icons-outlined"
+						>work_outline</mat-icon
+					>
+				</a>
+				<a
+					routerLink="/contact"
+					href="#"
+					routerLinkActive="active"
+					matTooltip="{{ 'Tabs.Contact' | translate }}"
+					matTooltipPosition="right"
+				>
+					<mat-icon class="material-icons-outlined"
+						>mail_outline</mat-icon
+					>
+				</a>
+				<span class="filler"></span>
+				<a [matMenuTriggerFor]="menu"
+					class="show-pointer"
+					matTooltip="Settings"
+					matTooltipPosition="right"
+				>
+					<mat-icon class="material-icons-outlined"
+						>settings</mat-icon
+					>
+				</a>
+				<mat-menu #menu="matMenu">
+					<button mat-menu-item (click)='toggleLanguage()'>
+						<mat-icon>language</mat-icon>
+						<span>{{ 'Settings.Switch' | translate }}</span>
+					</button>
+				</mat-menu>
+			</div>
+		</mat-sidenav>
+		<mat-sidenav-content>
+			<app-tabs></app-tabs>
+			<div class="editor-window">
+				<router-outlet></router-outlet>
+			</div>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
+	<!-- <div id="footer">
+		Copyright
+	</div> -->
+</div>

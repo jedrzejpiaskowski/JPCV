@@ -1,0 +1,80 @@
+.tabs-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+	display: flex;
+    flex-wrap: nowrap;
+    // overflow-x: scroll;
+	align-items: center;
+    background-color: #333333;
+
+	.tab {
+		line-height: 18pt;
+		padding: 0.3em 0.4em 0.2em 0.3em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #333333;
+		border-left: 1px solid #1e1e1e;
+		cursor: pointer;
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none;
+		// vertical-align: bottom;
+
+		span {
+            font-size: 10pt;
+        }
+
+		.mat-icon {
+			margin-left: 0.5em;
+			line-height: 18pt;
+			vertical-align: middle;
+			font-size: 12pt;
+			color: grey;
+		}
+
+		.mat-icon.close {
+			visibility: hidden;
+        }
+	}
+
+	.tab-active {
+		background-color: #1e1e1e;
+	}
+
+	.tab-active > .mat-icon.close {
+		visibility: visible;
+	}
+
+	.tab:hover > .mat-icon.close {
+		visibility: visible;
+    }
+    
+    @media screen and (orientation: portrait), (max-width: 600px) {
+        visibility: collapse;
+
+        mat-icon {
+            width: 0px;
+            visibility: collapse;
+        }
+
+        .tab, .mat-icon,
+        .tab-active > .mat-icon.close, .tab:hover > .mat-icon.close
+         {
+            visibility: collapse;
+        }
+        // .mat-icon {
+        //     margin-left: 0px;
+        // }
+
+        // span {
+        //     color: red;
+        //     visibility: collapse;
+        //     width: 0px;
+        // }
+    }
+}

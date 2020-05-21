@@ -1,0 +1,126 @@
+#about-me-container {
+	display: flex;
+	padding: 2em;
+
+	@media screen and (orientation: portrait), (max-width: 960px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.left-section {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 2;
+		align-items: center;
+
+		@media screen and (orientation: portrait), (max-width: 960px) {
+		}
+
+		.image-container {
+			// background-color: red;
+			margin: 0em 2em 2em 2em;
+
+			img {
+				overflow: hidden;
+				border-radius: 300px;
+				width: auto;
+				max-height: 45vh;
+				transition: border-radius 0.5s;
+
+				@media screen and (orientation: portrait), (max-width: 960px) {
+					max-width: 80vw;
+					max-height: 70vh;
+				}
+			}
+
+			img:hover {
+				border-radius: 5px;
+			}
+			// width: 100%;
+			// height: auto;
+		}
+
+		.basic-info {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
+	}
+
+	.right-section {
+		margin: 0 2em;
+
+		// @media screen and (orientation: portrait), (max-width: 960px) {
+		// 	margin: 0px;
+		// }
+
+		p {
+            text-align: justify;
+            margin-bottom: 1.2em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            margin-right: 0.25em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+		.hobbies-container {
+            display: flex;
+            flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+            // vertical-align: middle;
+            
+            .hobby {
+                display: flex;
+                justify-content: center;
+                // align-items: ;
+
+                .subtitle {
+                    font-weight: normal;
+                }
+
+                mat-icon {
+                    margin-right: 0.5em;
+                }
+            }
+
+            .hobby:hover p .subtitle {
+                color: white;
+            }
+
+		}
+	}
+}
+
+.code {
+	color: #6a9955;
+	font-family: Consolas, "Courier New", monospace;
+	counter-reset: line-count;
+
+	span {
+		display: block;
+		counter-increment: line-count;
+	}
+
+	span:before {
+		content: counter(line-count);
+		color: grey;
+		text-align: right;
+		margin-right: 1.5em;
+	}
+}
+
+.code:before {
+	content: "/*";
+}
+
+.code:after {
+	content: "*/";
+}

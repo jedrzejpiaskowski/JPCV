@@ -1,0 +1,59 @@
+<div class="main-container">
+	<div class='skills-container'>
+        <mat-card class="skill-card">
+			<mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon color='accent'>code</mat-icon>
+                </div>
+				<mat-card-title>Frontend</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+                <div class='skill-progress'><app-skill-progress skillName="Angular 2-9" skillLevel='60'></app-skill-progress></div>
+                <div class='skill-progress'><app-skill-progress skillName="Angular Material" skillLevel='70'></app-skill-progress></div>
+                <div class='skill-progress'><app-skill-progress skillName="Typescript" skillLevel='60'></app-skill-progress></div>
+                <div class='skill-progress'><app-skill-progress skillName="HTML, CSS" skillLevel='80'></app-skill-progress></div>
+			</mat-card-content>
+        </mat-card>
+		<mat-card class="skill-card">
+			<mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon color='accent'>memory</mat-icon>
+                </div>
+				<mat-card-title>Backend</mat-card-title>
+			</mat-card-header>
+			<mat-card-content class='skills-list'>
+                <app-skill-progress class='skill-progress' skillName="C#" skillLevel='90'></app-skill-progress>
+                <app-skill-progress class='skill-progress' skillName="ASP .NET Core" skillLevel='70'></app-skill-progress>
+                <app-skill-progress class='skill-progress' skillName="NUnit, xUnit, moq" skillLevel='80'></app-skill-progress>
+                <app-skill-progress class='skill-progress' skillName="WPF" skillLevel='80'></app-skill-progress>
+                <app-skill-progress class='skill-progress' skillName="WCF" skillLevel='50'></app-skill-progress>
+			</mat-card-content>
+        </mat-card>
+        <mat-card class="skill-card">
+			<mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon color='accent'>storage</mat-icon>
+                </div>
+				<mat-card-title i18n>{{ 'Skills.DB' | translate }}</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+                <app-skill-progress class='skill-progress' skillName="SQL + SMSS" skillLevel='60'></app-skill-progress>
+                <app-skill-progress class='skill-progress' skillName="Entity Framework [Core]" skillLevel='70'></app-skill-progress>
+                <app-skill-progress class='skill-progress' skillName="Dapper" skillLevel='60'></app-skill-progress>
+			</mat-card-content>
+        </mat-card>
+        <mat-card class="skill-card">
+			<mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon color='accent'>category</mat-icon>
+                </div>
+				<mat-card-title i18n>{{ 'Skills.Others' | translate }}</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+                <div class='skill-progress'><app-skill-progress skillName="Adobe Photoshop" skillLevel='90'></app-skill-progress></div>
+                <div class='skill-progress'><app-skill-progress skillName="Unity3D" skillLevel='50'></app-skill-progress></div>
+                <div class='skill-progress'><app-skill-progress skillName="TeamCity" skillLevel='50'></app-skill-progress></div>
+			</mat-card-content>
+		</mat-card>
+	</div>
+</div>

@@ -1,0 +1,108 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$JPCV-primary: mat-palette($mat-blue);
+$JPCV-accent: mat-palette($mat-deep-orange, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$JPCV-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$JPCV-theme: mat-dark-theme($JPCV-primary, $JPCV-accent, $JPCV-warn);
+
+$vs-dark: #333333;
+$vs-darkest: #1e1e1e;
+$vs-light: #989898;
+$vs-accent: #3794ff;
+$primary: mat-color($JPCV-primary);
+$accent: mat-color($JPCV-accent);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($JPCV-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	// background-color: #1e1e1e;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: 1px solid $vs-dark;
+	// background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #424242;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #4f4f4f;
+}
+
+.main-container {
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	.content {
+		margin: 15px;
+	}
+}
+
+h1, h2, h3 {
+    display: flex;
+    align-items: center;
+    color: $vs-light;
+    
+    mat-icon {
+        margin-right: 0.4em;
+    }
+}
+
+p {
+    color: #cccccc;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'BoldFont'; /*a name to be used later*/
+    src: url('/assets/fonts/theboldfont.ttf');
+}
+
+.show-pointer {
+    cursor: pointer;
+}
+
+.full-space-container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+

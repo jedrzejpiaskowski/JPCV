@@ -1,0 +1,55 @@
+<div class="main-container">
+	<div id="about-me-container">
+		<div class="left-section">
+			<div class="image-container">
+				<img src="../../assets/my_photo.jpg" />
+			</div>
+			<div class="basic-info">
+				<h1>Jędrzej Piaskowski</h1>
+				<h3>
+					<mat-icon color="primary">work_outline</mat-icon>{{'AboutMe.Position' | translate}}
+				</h3>
+				<h3>
+					<mat-icon color="primary">date_range</mat-icon>{{'AboutMe.Born' | translate}}
+				</h3>
+				<h3>
+					<mat-icon class="material-icons-outlined" color="primary">home</mat-icon>{{ 'AboutMe.Residence' | translate }}
+                </h3>
+			</div>
+        </div>
+		<div class="right-section">
+			<h1><mat-icon color="accent">person_outline</mat-icon>{{ 'AboutMe.Header' | translate }}</h1>
+			<p i18n>{{ 'AboutMe.A1' | translate }}</p>
+			<p i18n>{{ 'AboutMe.A2' | translate }}</p>
+            <p i18n>
+                <span [innerHtml]="'AboutMe.A31' | translate"></span>
+                <a a routerLink='/contact'>{{ 'AboutMe.A3C' | translate }}</a>
+                <span>{{ 'AboutMe.A32' | translate }}</span>
+            </p>
+            <h1>
+                <mat-icon class="material-icons-outlined" color="accent">school</mat-icon>
+                {{ 'AboutMe.Education' | translate }}
+            </h1>
+            <p>
+                <a href='https://www.p.lodz.pl/' target='_blank' class='university'>{{ 'AboutMe.University' | translate }}</a>  10.2010 - 02.2016<br>
+                {{ 'AboutMe.TitleAndGrade' | translate }}
+            </p>
+			<p i18n></p>
+			<h1><mat-icon color="accent">favorite_outline</mat-icon>{{'AboutMe.H' | translate }}</h1>
+			<div class="hobbies-container">
+                <div class='hobby'>
+                    <mat-icon color='primary'>sports_tennis</mat-icon>
+                    <p i18n><span class='subtitle'>{{'AboutMe.H1' | translate }}</span><span [innerHtml]="'AboutMe.H1DESC' | translate"></span></p>
+                </div>
+                <div class='hobby'>
+                    <mat-icon color='primary'>movie</mat-icon>
+                    <p i18n><span class='subtitle'>{{'AboutMe.H2' | translate }}</span><span [innerHtml]="'AboutMe.H2DESC' | translate"></span></p>
+                </div>
+                <div class='hobby'>
+                    <mat-icon color='primary'>videogame_asset</mat-icon>
+                    <p i18n><span class='subtitle'>{{'AboutMe.H3' | translate }}</span><span [innerHtml]="'AboutMe.H3DESC' | translate"></span></p>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>

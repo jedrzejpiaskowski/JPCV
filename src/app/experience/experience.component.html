@@ -1,0 +1,132 @@
+<div class="experience-container">
+    <mat-vertical-stepper linear="false" labelPosition="bottom" #stepper>
+        <ng-template matStepperIcon="edit">
+            <mat-icon>work_outline</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="number" let-index="index">
+            <mat-icon>work</mat-icon>
+        </ng-template>
+        <mat-step completed>
+            <ng-template matStepLabel>{{ "Jobs.Sii" | translate }}</ng-template>
+            <div class="job-description">
+                <h1>
+                    <a target="_blank" href="http://sii.pl">Sii Poland</a>
+                    11.2017 - {{ "Experience.Now" | translate }}, {{ "Experience.Lodz" | translate }}
+                </h1>
+                <div class="job-container">
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Desc" | translate }}</h3>
+                        <p>{{ "Experience.Sii.Desc" | translate }}</p>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Resp" | translate }}</h3>
+                        <ul class='responsibilities'>
+                            <li>{{ "Experience.Sii.Resp1" | translate }}</li>
+                            <li>{{ "Experience.Sii.Resp2" | translate }}</li>
+                            <li>{{ "Experience.Sii.Resp3" | translate }}</li>
+                            <li>{{ "Experience.Sii.Resp4" | translate }}</li>
+                            <li>{{ "Experience.Sii.Resp5" | translate }}</li>
+                        </ul>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Tech" | translate }}</h3>
+                        <mat-chip-list aria-orientation="vertical">
+                            <mat-chip>C#</mat-chip>
+                            <mat-chip>.NET Core</mat-chip>
+                            <mat-chip>Angular</mat-chip>
+                            <mat-chip>Angular Material</mat-chip>
+                            <mat-chip>SQL Server</mat-chip>
+                            <mat-chip>WCF</mat-chip>
+                            <mat-chip>WPF</mat-chip>
+                            <mat-chip>Git</mat-chip>
+                            <mat-chip>TeamCity</mat-chip>
+                            <mat-chip>Ansible</mat-chip>
+                        </mat-chip-list>
+                    </div>
+                </div>
+            </div>
+        </mat-step>
+        <mat-step completed>
+            <ng-template matStepLabel>{{ "Jobs.Infosys" | translate }}</ng-template>
+            <div class="job-description">
+                <h1>
+                    <a target="_blank" href="https://www.infosysbpm.com/">Infosys BPM</a>
+                    01.2017 - 10.2017, {{ "Experience.Lodz" | translate }}
+                </h1>
+                <div class="job-container">
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Desc" | translate }}</h3>
+                        <p>{{ "Experience.Infosys.Desc" | translate }}</p>
+                        <ul>
+                            <li>{{ "Experience.Infosys.Desc1" | translate }}</li>
+                            <li>{{ "Experience.Infosys.Desc2" | translate }}</li>
+                            <li>{{ "Experience.Infosys.Desc3" | translate }}</li>
+                        </ul>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Resp" | translate }}</h3>
+                        <ul class='responsibilities'>
+                            <li>{{ "Experience.Infosys.Resp1" | translate }}</li>
+                            <li>{{ "Experience.Infosys.Resp2" | translate }}</li>
+                            <li>{{ "Experience.Infosys.Resp3" | translate }}</li>
+                            <li>{{ "Experience.Infosys.Resp4" | translate }}</li>
+                            <li>{{ "Experience.Infosys.Resp5" | translate }}</li>
+                        </ul>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Tech" | translate }}</h3>
+                        <mat-chip-list aria-orientation="vertical">
+                            <mat-chip>C#</mat-chip>
+                            <mat-chip>.NET 4.0-4.6</mat-chip>
+                            <mat-chip>WPF</mat-chip>
+                            <mat-chip>SQL Server</mat-chip>
+                            <mat-chip>Windows Services</mat-chip>
+                        </mat-chip-list>
+                    </div>
+                </div>
+            </div>
+        </mat-step>
+        <mat-step completed>
+            <ng-template matStepLabel>{{ "Jobs.Teyon" | translate }}</ng-template>
+            <div class="job-description">
+                <h1>
+                    <a target="_blank" href="https://teyon.com/">Teyon</a>
+                    10.2013 - 12.2016, {{ "Experience.Lodz" | translate }}
+                </h1>
+                <div class="job-container">
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Desc" | translate }}</h3>
+                        <p>{{ "Experience.Teyon.Desc1" | translate }}</p>
+                        <p>{{ "Experience.Teyon.Desc2" | translate }}</p>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Resp" | translate }}</h3>
+                        <ul class='responsibilities'>
+                            <li>{{ "Experience.Teyon.Resp1" | translate }}</li>
+                            <li>{{ "Experience.Teyon.Resp2" | translate }}</li>
+                            <li>{{ "Experience.Teyon.Resp3" | translate }}</li>
+                        </ul>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Tech" | translate }}</h3>
+                        <mat-chip-list aria-orientation="vertical">
+                            <mat-chip>Unity3D</mat-chip>
+                            <mat-chip>C++</mat-chip>
+                            <mat-chip>Nintendo 3DS</mat-chip>
+                            <mat-chip>iOS</mat-chip>
+                            <mat-chip>Android</mat-chip>
+                            <mat-chip>Xbox One</mat-chip>
+                            <mat-chip>PS4</mat-chip>
+                        </mat-chip-list>
+                    </div>
+                </div>
+            </div>
+        </mat-step>
+    </mat-vertical-stepper>
+</div>

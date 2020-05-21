@@ -1,0 +1,41 @@
+@import '../../styles.scss';
+
+.icons-container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .contact-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        text-decoration: none;
+
+        .mat-icon {
+            width: auto;
+            width: 20vw;
+            height: auto;
+            margin: 0px 1em;
+            // height: 50vh;
+            fill: grey;
+            cursor: pointer;
+        }
+
+        .link-text, a {
+            font-size: 14pt;
+            color: $vs-light;
+            text-decoration: none;
+        }
+    }
+
+    .contact-icon:hover .mat-icon {
+        fill: #989898;
+    }
+
+    .contact-icon:hover .link-text {
+        color: $primary;
+    }
+}

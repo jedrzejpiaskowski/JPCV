@@ -1,0 +1,11 @@
+<div class="skill-progress" matTooltip='{{skillLevel/10}} / 10' matTooltipPosition='right'>
+	<span class="skill-header">
+		{{ skillName }}
+	</span>
+	<mat-progress-bar
+		class="example-margin"
+		color="primary"
+		mode="buffer"
+		[value]="skillLevel">
+	</mat-progress-bar>
+</div>

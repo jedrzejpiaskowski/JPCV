@@ -1,0 +1,81 @@
+@import '../styles.scss';
+
+.full-height {
+	display: flex;
+	flex-direction: column;
+	// height: 100%;
+
+	#footer {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #3794ff;
+		color: white;
+		// padding: 2px;
+		font-size: 9pt;
+	}
+
+	mat-sidenav-container {
+		position: fixed;
+		//   display: flex;
+		flex-grow: 1;
+		height: 100%;
+		//   min-height: 100%;
+		width: 100%;
+		min-width: 100%;
+		background-color: $vs-accent;
+
+		.main-menu {
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			height: 100%;
+
+			a {
+				display: block;
+				color: #989898;
+				border-left: 2px solid $vs-dark;
+				padding: 0.3em 0;
+			}
+
+			.filler {
+                display: flex;
+                flex-grow: 1;
+			}
+
+			.active {
+				color: white;
+				border-left: 2px solid white;
+			}
+
+			a:hover {
+				color: white;
+			}
+
+			p {
+				text-align: left;
+			}
+
+			mat-icon {
+				padding: 0.3em 0.5em;
+			}
+		}
+
+		mat-sidenav {
+			border-right: 0px;
+			background-color: $vs-dark;
+		}
+
+		mat-sidenav-content {
+			background-color: #1e1e1e;
+
+			.editor-window {
+                // display: flex;
+				margin-top: 35px;
+				height: calc(100% - 35px);
+				overflow: auto;
+			}
+		}
+	}
+}

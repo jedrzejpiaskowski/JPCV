@@ -1,0 +1,18 @@
+@import '../../styles.scss';
+
+.skill-progress {
+    display: flex;
+    flex-direction: column;
+
+    .skill-header {
+        font-family: Roboto;
+        font-size: 12pt;
+        margin-top: 0.6em;
+        margin-bottom: 0.4em;
+    }
+
+	mat-progress-bar {
+        min-width: 10vw;
+        margin-bottom: 0.4em;
+    }
+}
