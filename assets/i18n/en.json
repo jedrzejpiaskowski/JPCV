@@ -20,7 +20,7 @@
         "Header": "About me",
         "A1": "Hello there! Thank you for visiting my website. I thought creating it would be a good opportunity to reassess and describe my current programming knowledge and try out some new web designing ideas. Also, having worked as a programmer for over 6 years now, I figured it wouldn't hurt to have one. :)",
         "A2": "I have an analytical mind, but I think of myself as a creative one trying to find new solutions. As a programmer I care about doing things that will satisfy the user and provide a degree of interaction. For some time I have worked in video game industry, but currently I'm focused on frontend technologies working in conjuction with .NET. I believe I have a sense of aesthetics and flair for UX design - that is also an area I would love to improve in.",
-        "A31": "I am commited, responsible and easy to work with. I look forward to learn from others and get inspired. <br>Please feel free to ",
+        "A31": "I am commited, responsible and easy to work with. I look forward to learn from others and get inspired. Please feel free to ",
         "A3C": "contact me",
         "A32": "if you have any questions.",
         "Education": "Education",
@@ -30,9 +30,9 @@
         "H1": "Racket sports enthusiast",
         "H1DESC": " - used to play tennis a lot, now moved on to squash. Regularly following ATP cycle.<br>I like to be active in general - whether it's riding a bike, going to gym or doing some bouldering.",
         "H2": "Avid cinema-goer",
-        "H2DESC": " - watching all genres, but good dramas, thrillers/horrors and sci-fi are most welcome.<br>Nolan, Scorsese, Fincher, Tarantino and Villenevue amongst favourite directors.",
+        "H2DESC": " - watching all genres, but good dramas, thrillers/horrors and sci-fi are most welcome. Nolan, Scorsese, Fincher, Tarantino and Villenevue amongst favourite directors.",
         "H3": "Video games",
-        "H3DESC": " - used to be a game developer for a few years and even though that has changed,<br>I play them whenever I have free time. Especially enjoy RPGs and complex action/adventures with story-driven gameplay."
+        "H3DESC": " - used to be a game developer for a few years and even though that has changed, I play them whenever I have free time. Especially enjoy RPGs and complex action/adventures with story-driven gameplay."
     },
     "Skills": {
         "DB": "Databases",
