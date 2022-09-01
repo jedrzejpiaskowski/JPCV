@@ -18,7 +18,7 @@
         "Born": "Born: 08.03.1991",
         "Residence": "Residence: Lodz, Poland",
         "Header": "About me",
-        "A1": "Hello there! Thank you for visiting my website. I thought creating it would be a good opportunity to reassess and describe my current programming knowledge and try out some new web designing ideas. Also, having worked as a programmer for over 6 years now, I figured it wouldn't hurt to have one. :)",
+        "A1": "Hello there! Thank you for visiting my website. I thought creating it would be a good opportunity to reassess and describe my current programming knowledge and try out some new web designing ideas. Also, having worked as a programmer for over 6 years now (written in 2020), I figured it wouldn't hurt to have one. :)",
         "A2": "I have an analytical mind, but I think of myself as a creative one trying to find new solutions. As a programmer I care about doing things that will satisfy the user and provide a degree of interaction. For some time I have worked in video game industry, but currently I'm focused on frontend technologies working in conjuction with .NET. I believe I have a sense of aesthetics and flair for UX design - that is also an area I would love to improve in.",
         "A31": "I am commited, responsible and easy to work with. I look forward to learn from others and get inspired. Please feel free to ",
         "A3C": "contact me",
@@ -44,6 +44,12 @@
         "Resp": "Responsibilities",
         "Tech": "Technologies used",
         "Lodz": "Lodz",
+        "Godel": {
+            "Desc": "I work for a British company that is a leader of re-commerce in the UK and US and develops its own platform for selling and renting consumer technology. My team is responsible for the checkout process.",
+            "Resp1": "New software development: coding, debugging, testing",
+            "Resp2": "Participating in deployments, planning, creating tasks, discussing epics",
+            "Resp3": "Analysis, maintenance, reporting bugs"
+        },
         "Sii": {
             "Desc": "Assigned to mBank Lodz Headquarters (one of Sii partners) as external worker. I work in a small team participating in wide range of projects: to be used mainly, but not only, in internal bank structures. Requirements are very diverse: from small tools designed to support work within the team, to complex multi-layered web services and systems. Our team focuses on the use of modern technologies and develops high-quality, testable software.",
             "Resp1": "New software development: coding, debugging, testing",
@@ -72,6 +78,7 @@
         }
     },
     "Jobs": {
+        "Godel": "Senior Software Engineer",
         "Sii": "Software Engineer",
         "Infosys": "Systems Engineer",
         "Teyon": "Gameplay programmer"

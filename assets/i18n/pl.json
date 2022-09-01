@@ -18,7 +18,7 @@
         "Born": "Urodzony: 08.03.1991",
         "Residence": "Zamieszkały: Łódź, Polska",
         "Header": "O mnie",
-        "A1": "Witaj! Miło mi że tu zajrzałeś. Pomyślałem że zrobienie CV online będzie dobrą okazją do oszacowania mojej obecnej programistycznej wiedzy i wypróbowania kilku pomysłów odnośnie projektowania stron. Poza tym, skoro pracuję jako programista od ponad 6 lat, uznałem że nie zaszkodzi mieć swojego miejsca w sieci. :)",
+        "A1": "Witaj! Miło mi że tu zajrzałeś. Pomyślałem że zrobienie CV online będzie dobrą okazją do oszacowania mojej obecnej programistycznej wiedzy i wypróbowania kilku pomysłów odnośnie projektowania stron. Poza tym, skoro pracuję jako programista od ponad 6 lat (pisane w 2020), uznałem że nie zaszkodzi mieć swojego miejsca w sieci. :)",
         "A2": "Mam analityczny umysł, ale uważam się za kogoś kreatywnego, potrafiącego znaleźć nowe rozwiązania. W pracy, jako programiście zależy mi na tworzeniu rzeczy, które satysfakcjonują użytkownika i gwarantują pewną dozę interakcji. Przez pewien czas zajmowałem się tworzeniem gier komputerowych, jednak obecnie skupiam się na technologiach .NET i frameworkach javascriptowych.",
         "A31": "Jestem zaangażowany, odpowiedzialny i kontaktowy. Chciałbym jeszcze wielu rzeczy się nauczyć i czerpać inspirację od innych.<br>Nie wahaj się, ",
         "A3C": "skontaktuj się ze mną",
@@ -44,6 +44,12 @@
         "Resp": "Obowiązki",
         "Tech": "Używane technologie",
         "Lodz": "Łódź",
+        "Godel": {
+            "Desc": "Praca dla brytyjskiej firmy będącej liderem rynku re-commerce w Wielkiej Brytanii i Stanach Zdjednoczonych rozwijająca swoją własną platformę do sprzedaży oraz wypożyczania elektroniki konsumenckiej. Mój zespół odpowiada za proces realizacji transakcji.",
+            "Resp1": "Rozwój oprogramowania: pisanie kodu, debugowanie, testowanie",
+            "Resp2": "Uczestniczenie we wdrożeniach, planowaniu, tworzeniu zadań, omawianiu epików",
+            "Resp3": "Analiza, utrzymanie, zgłaszanie błędów"
+        },
         "Sii": {
             "Desc": "Przydzielony do pracy w mBanku (jeden z klientów Sii) jako pracownik zewnętrzny. Praca w małym zespole tworzącym rozwiązania używane głównie, lecz nie wyłącznie, w wewnętrznych strukturach bankowych. Wymagania projektowe są bardzo szerokie: od małych narzędzi wspomagających pracę zespołu, po złożone usługi, wielowarstwowe serwisy i strony internetowe. Nasz zespół skupia się na wykorzystaniu nowoczesnych technologii i tworzy wysokiej jakości, testowalne oprogramowanie.",
             "Resp1": "Rozwój oprogramowania: pisanie kodu, debugowanie, testowanie",
@@ -72,6 +78,7 @@
         }
     },
     "Jobs": {
+        "Godel": "Starszy inżynier oprogramowania",
         "Sii": "Inżynier oprogramowania",
         "Infosys": "Inżynier systemów",
         "Teyon": "Programista rozgrywki"
