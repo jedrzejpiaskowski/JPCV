@@ -7,11 +7,51 @@
             <mat-icon>work</mat-icon>
         </ng-template>
         <mat-step completed>
+            <ng-template matStepLabel>{{ "Jobs.Godel" | translate }}</ng-template>
+            <div class="job-description">
+                <h1>
+                    <a target="_blank" href="http://sii.pl">Godel Poland</a>
+                    01.2022 - {{ "Experience.Now" | translate }}, {{ "Experience.Lodz" | translate }}
+                </h1>
+                <div class="job-container">
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Desc" | translate }}</h3>
+                        <p>{{ "Experience.Godel.Desc" | translate }}</p>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Resp" | translate }}</h3>
+                        <ul class='responsibilities'>
+                            <li>{{ "Experience.Godel.Resp1" | translate }}</li>
+                            <li>{{ "Experience.Godel.Resp2" | translate }}</li>
+                            <li>{{ "Experience.Godel.Resp3" | translate }}</li>
+                        </ul>
+                    </div>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <div class="desc-item">
+                        <h3>{{ "Experience.Tech" | translate }}</h3>
+                        <mat-chip-list aria-orientation="vertical">
+                            <mat-chip>C#</mat-chip>
+                            <mat-chip>.NET 5-6</mat-chip>
+                            <mat-chip>React</mat-chip>
+                            <mat-chip>Azure</mat-chip>
+                            <mat-chip>MySQL</mat-chip>
+                        </mat-chip-list>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button mat-icon-button matStepperNext>
+                    <mat-icon>arrow_downward</mat-icon>
+                </button>
+            </div>
+        </mat-step>
+        <mat-step completed>
             <ng-template matStepLabel>{{ "Jobs.Sii" | translate }}</ng-template>
             <div class="job-description">
                 <h1>
                     <a target="_blank" href="http://sii.pl">Sii Poland</a>
-                    11.2017 - {{ "Experience.Now" | translate }}, {{ "Experience.Lodz" | translate }}
+                    11.2017 - 12.2021, {{ "Experience.Lodz" | translate }}
                 </h1>
                 <div class="job-container">
                     <div class="desc-item">
@@ -46,6 +86,14 @@
                         </mat-chip-list>
                     </div>
                 </div>
+            </div>
+            <div>
+                <button mat-icon-button matStepperPrevious>
+                    <mat-icon>arrow_upward</mat-icon>
+                </button>
+                <button mat-icon-button matStepperNext>
+                    <mat-icon>arrow_downward</mat-icon>
+                </button>
             </div>
         </mat-step>
         <mat-step completed>
@@ -89,6 +137,14 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <button mat-icon-button matStepperPrevious>
+                    <mat-icon>arrow_upward</mat-icon>
+                </button>
+                <button mat-icon-button matStepperNext>
+                    <mat-icon>arrow_downward</mat-icon>
+                </button>
+            </div>
         </mat-step>
         <mat-step completed>
             <ng-template matStepLabel>{{ "Jobs.Teyon" | translate }}</ng-template>
@@ -126,6 +182,11 @@
                         </mat-chip-list>
                     </div>
                 </div>
+            </div>
+            <div>
+                <button mat-icon-button matStepperPrevious>
+                    <mat-icon>arrow_upward</mat-icon>
+                </button>
             </div>
         </mat-step>
     </mat-vertical-stepper>

@@ -15,6 +15,6 @@ export class ContactComponent extends TabBase {
   public gm: '@gmai.com';
 
   constructor(router: Router, tabRegistry: TabRegistryService) {
-    super('alternate_email', router, tabRegistry);
+    super('Contact', 'alternate_email', router, tabRegistry);
    }
 }

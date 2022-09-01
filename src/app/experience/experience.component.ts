@@ -14,7 +14,7 @@ export class ExperienceComponent extends TabBase{
   public iconName: string = 'timeline';
 
   constructor(router: Router, tabRegistry: TabRegistryService) {
-    super('timeline', router, tabRegistry);
+    super('Experience', 'work_outline', router, tabRegistry);
       this.url = this.router.url;
   }
 }

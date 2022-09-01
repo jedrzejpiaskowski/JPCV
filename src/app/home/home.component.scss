@@ -1,71 +1,83 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
+
+@font-face {
+	font-family: "BoldFont";
+    src: url('/assets/fonts/theboldfont.ttf'),
+    url('../../assets/fonts/theboldfont.ttf');
+}
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 
-    @media screen and (orientation:portrait), (max-width: 960px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-    }
+	@media screen and (orientation: portrait), (max-width: 960px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
-    .logo-image {
-        // flex-grow: 1;
-        min-height: 20vh;
-        max-height: 35vh;
-        max-width: 60vw;
-        margin: 2em;
-    }
+	.logo-image {
+		// flex-grow: 1;
+		min-height: 20vh;
+		max-height: 40vh;
+		max-width: 60vw;
+		margin: 2em;
+	}
 
-    .header-section {
-        // background-color: darkblue;
-        flex-grow: 2;
-        display: flex;
-        flex-direction: column;
+	.header-section {
+		display: flex;
+		flex-direction: column;
 
-        h1.name, h3.title {
-            font-family: 'BoldFont';
-        }
-        
-        h1.name {
-            font-size: 70pt;
-            color: #cccccc;
-            margin: 0.4em 0em;
-        }
-        
-        h3.title {
-            font-size: 26pt;
-            color: #989898;
-            letter-spacing: 6px;
-            margin: 0 0 1em 0;
-        }
-        
-        .nav-links a {
-            margin-right: 0.75em;
+		h1.name,
+		h3.title {
+			font-family: "BoldFont1", 'Roboto Condensed', "Work Sans", "Roboto";
+			// font-weight: bold;
+		}
+
+		h1.name {
+			font-size: 70pt;
+			font-size: 8vw;
+			color: #cccccc;
+			margin: 0.4em 0em;
+		}
+
+		h3.title {
+			font-size: 26pt;
+			font-size: 3vw;
+			color: #989898;
+			letter-spacing: 6px;
+			margin: 0.1em 0 1em 0;
+		}
+
+		.nav-links a {
+			margin-right: 0.75em;
 			text-decoration: none;
 			color: $primary;
-            font-size: 14pt;
-        }
+			font-size: 14pt;
+		}
 
-        @media screen and (orientation:portrait), (max-width: 960px) {
-            h1.name {
-                font-size: 34pt;
-            }
+		@media screen and (orientation: portrait), (max-width: 960px) {
+			align-items: center;
+			justify-content: center;
 
-            h3.title {
-                font-size: 14pt;
-                letter-spacing: 2px;
-            }
+			h1.name {
+				font-size: 30pt;
+				font-size: 10vw;
+			}
 
-            .nav-links a {
-                font-size: 12pt;
-            }
-        }
+			h3.title {
+				font-size: 4vw;
+				letter-spacing: 2px;
+			}
 
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-    }
+			.nav-links a {
+				font-size: 10pt;
+			}
+		}
+
+		.nav-links a:hover {
+			text-decoration: underline;
+		}
+	}
 }

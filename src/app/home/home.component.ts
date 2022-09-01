@@ -13,6 +13,6 @@ export class HomeComponent extends TabBase {
   public iconName = 'pan_tool';
 
   constructor(router: Router, tabRegistry: TabRegistryService) {
-    super('pan_tool', router, tabRegistry);
+    super('Home', 'pan_tool', router, tabRegistry);
    }
 }

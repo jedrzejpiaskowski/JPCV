@@ -7,17 +7,11 @@ export abstract class TabBase implements OnInit {
     public url: string;
 	public iconName: string;
     
-    constructor(iconName: string, public router: Router, public tabRegistry: TabRegistryService) {
+    constructor(tabName: string, iconName: string, public router: Router, public tabRegistry: TabRegistryService) {
         this.iconName = iconName;
         this.url = router.url;
-        let tName = this.constructor.name;
-        const cIndex = tName.indexOf('Component');
-        if (cIndex > 0) {
-            tName = tName.substring(0, cIndex);
-            this.tabName = tName;
-        } else {
-            this.tabName = tName;
-        }
+        console.log(this.url);
+        this.tabName = tabName;
         this.tabRegistry.activate(this);
     }
 

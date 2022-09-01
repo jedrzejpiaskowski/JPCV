@@ -18,7 +18,7 @@ export class AboutMeComponent extends TabBase implements OnInit {
 		router: Router,
 		tabRegistry: TabRegistryService
 	) {
-		super('mood', router, tabRegistry);
+		super('AboutMe', 'mood', router, tabRegistry);
 	}
 
 	ngOnInit(): void {

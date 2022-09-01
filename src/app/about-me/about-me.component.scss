@@ -1,43 +1,55 @@
 #about-me-container {
 	display: flex;
-	padding: 2em;
+    padding: 2em;
+    flex-direction: row;
+    align-items: flex-start;
 
-	@media screen and (orientation: portrait), (max-width: 960px) {
+	@media screen and (max-width: 640px) {
 		flex-direction: column;
-		align-items: center;
-	}
+    }
+    
+    mat-divider {
+        margin-bottom: 1em;
+    }
 
 	.left-section {
+        position: relative;
+        width: 90%;
+
 		display: flex;
 		flex-direction: column;
-		flex-grow: 2;
-		align-items: center;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 5%;
 
-		@media screen and (orientation: portrait), (max-width: 960px) {
+		@media screen and (min-width: 640px) {
+            margin-left: 0;
+            position: fixed;
+            width: 25%;
 		}
 
 		.image-container {
-			// background-color: red;
 			margin: 0em 2em 2em 2em;
 
 			img {
+                max-width: 75vw;
+                max-height: 70vh;
+
 				overflow: hidden;
 				border-radius: 300px;
 				width: auto;
-				max-height: 45vh;
+
 				transition: border-radius 0.5s;
 
-				@media screen and (orientation: portrait), (max-width: 960px) {
-					max-width: 80vw;
-					max-height: 70vh;
+				@media screen and (min-width: 640px) {
+                    max-height: 45vh;
+                    max-width: 20vw;
 				}
 			}
 
 			img:hover {
 				border-radius: 5px;
 			}
-			// width: 100%;
-			// height: auto;
 		}
 
 		.basic-info {
@@ -49,11 +61,16 @@
 	}
 
 	.right-section {
-		margin: 0 2em;
-
-		// @media screen and (orientation: portrait), (max-width: 960px) {
-		// 	margin: 0px;
-		// }
+        display: flex;
+        flex-direction: column;
+        margin: 0px 2em;
+        max-width: 100%;
+        
+        @media screen and (min-width: 640px) {
+            max-width: 50%;
+            margin: 0 2em;
+            margin-left: calc(30% + 2.5em);
+		}
 
 		p {
             text-align: justify;
@@ -71,16 +88,9 @@
         }
 
 		.hobbies-container {
-            display: flex;
-            flex-direction: column;
-			align-items: flex-start;
-			justify-content: center;
-            // vertical-align: middle;
             
             .hobby {
                 display: flex;
-                justify-content: center;
-                // align-items: ;
 
                 .subtitle {
                     font-weight: normal;
@@ -97,30 +107,4 @@
 
 		}
 	}
-}
-
-.code {
-	color: #6a9955;
-	font-family: Consolas, "Courier New", monospace;
-	counter-reset: line-count;
-
-	span {
-		display: block;
-		counter-increment: line-count;
-	}
-
-	span:before {
-		content: counter(line-count);
-		color: grey;
-		text-align: right;
-		margin-right: 1.5em;
-	}
-}
-
-.code:before {
-	content: "/*";
-}
-
-.code:after {
-	content: "*/";
 }

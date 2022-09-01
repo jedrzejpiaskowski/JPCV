@@ -7,7 +7,7 @@ import {ContactComponent } from './contact/contact.component';
 import { ExperienceComponent } from './experience/experience.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'skills', component: SkillsComponent },
